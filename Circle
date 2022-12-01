@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Circle
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int r=sc.nextInt();
+        int x1=sc.nextInt();
+        int y1=sc.nextInt();
+        int r1=sc.nextInt();
+        double d=0;
+        d=Math.sqrt(((x-x1)*(x-x1))+((y-y1)*(y-y1)));
+        if(d==(r+r1))
+        System.out.println("The circles are tangential");
+        else if(d<(r+r1))
+         System.out.println("The circles overlap");
+         else
+         System.out.println("The circles do not overlap");
+    }
+    
+}
