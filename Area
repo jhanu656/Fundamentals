@@ -1,0 +1,20 @@
+import java.util.*;
+public class Area
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int s,r;
+        double l;
+        int a=sc.nextInt();//side
+        int b=sc.nextInt();//length
+        int c=sc.nextInt();//breadth
+        float d=sc.nextFloat();//radius
+        s=a*a;//square
+        r=b*c;//reactangle
+        l=3.141*d*d;//circle
+        System.out.println(s);
+        System.out.println(r);
+        System.out.printf("%.2f",l);
+    }
+}
