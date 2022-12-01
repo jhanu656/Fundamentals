@@ -1,0 +1,18 @@
+import java.util.*;
+public class Simple
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter borrowed amount");
+        int p=sc.nextInt();
+        System.out.println("Enter number of years");
+        int t=sc.nextInt();
+        System.out.println("Enter rate of interest");
+        float r=sc.nextFloat();
+        float SI=(p*t*r)/100 ;
+        System.out.printf("%.2f",SI);
+        
+        
+    }
+}
