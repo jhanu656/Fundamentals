@@ -1,0 +1,18 @@
+import java.util.*;
+public class Lights
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        float a=sc.nextFloat();//speed
+        float b=sc.nextFloat();
+        float c=sc.nextFloat();//red light in sec
+        if (a>=c){
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+    }
+}
