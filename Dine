@@ -1,0 +1,27 @@
+import java.util.*;
+public class Dine
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        switch(s)
+        {
+            case "front":
+                int r=sc.nextInt();
+                if(r==1)
+                System.out.println("Left Handed");
+                if(r==2)
+                System.out.println("right Handed");
+                break;
+            case "rear":
+                 int r1=sc.nextInt();
+                 if(r1==1)
+                 System.out.println("right Handed");
+                 if(r1==2)
+                 System.out.println("left Handed");
+                 break;
+        }
+        //Write your code
+    }
+}
