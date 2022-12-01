@@ -1,0 +1,20 @@
+import java.util.*;
+public class Discount
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        float a=sc.nextFloat();
+        float b=sc.nextFloat();
+        float c=sc.nextFloat();
+        float h;
+        float e;
+        float f;
+        h=a+b;
+        e=a*c/100;
+        f=b*c/100;
+        System.out.printf("%.2f\n",h);
+        System.out.printf("%.2f\n",h-(e+f));
+        System.out.printf("%.2f\n",(e+f));
+    }
+}
