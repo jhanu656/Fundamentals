@@ -1,0 +1,29 @@
+import java.util.*;
+public class String5
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new  Scanner(System.in);
+        String a=sc.next();
+        char n;
+        String b=sc.next();
+        char k;
+        String s="";
+        String l="";
+        for (int i=a.length()-1;i>=0;i--)
+        {
+            n=a.charAt(i);
+            s=s+n;
+        }
+        for (int j=b.length()-1;j>=0;j--)
+        {
+            k=a.charAt(j);
+            l=l+k;
+        }
+        if (a==s && b==l)
+        System.out.println("Strings are same");
+        else
+        System.out.println("Strings are not same");
+    }
+}
+
