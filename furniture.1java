@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Furniture
+{
+public static void main(String arg[])	
+	{
+long amount,deppercent,year,afterdep,temp;
+Scanner sc=new Scanner(System.in);
+amount=sc.nextLong();
+deppercent=sc.nextLong();
+year=sc.nextLong();
+temp=depreciationCal(amount,deppercent,year);
+System.out.println(temp);
+	}
+static long depreciationCal(long amount,long deppercent, long year )
+	{
+        for(int i=1;i<=year;i++)
+        {
+            amount=(100-deppercent)*amount/100;
+        }
+        return amount;
+	}
+}
