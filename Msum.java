@@ -9,7 +9,6 @@ public class Sum
         System.out.println(Pro.a(n));
     }
 }
-
 class Program
 {
     public static int a(int n)
