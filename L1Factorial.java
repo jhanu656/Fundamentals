@@ -1,0 +1,37 @@
+//Code here
+import java.util.*;
+public class FactorialValue
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int odd=0,even=0,count=0,fact=1;
+        if(n%2==1)
+        {
+         odd++;
+        }
+         else{
+             for(int i=1;i<=n;i++)
+         {
+             fact=fact*i;
+         }
+          even++;
+         }
+         for(int i=2;i<=n;i++)
+         {
+             if(n%i==0)
+             {
+                 count++;
+             }
+         }
+        
+         if(odd==1&&count==1)
+         System.out.println("The given number is ODD and also a prime number");
+         else if(odd==1&&even==0)
+         System.out.println("The given number is ODD but not a prime number");
+         else
+         System.out.println("The given number is EVEN, so the factorial value of "+n+" is "+fact); 
+    }
+
+}
